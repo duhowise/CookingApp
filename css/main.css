@@ -1,0 +1,147 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 31-Aug-2017, 10:43:52
+    Author     : Radina
+*/
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300');
+body{
+    background-color: rgba(0, 0, 0, 0.91);
+}
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #f9914c;
+    box-sizing: border-box;
+    border-radius:10px;
+    background-color: white;
+}
+
+button{
+    font-family: 'Open Sans', sans-serif;
+    width: 119px;
+    height: 30px;
+	margin-left: 30%;
+	margin-right: 30%;
+	margin-top: 40px;
+    background-color: #f9914c;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius:10px;
+}
+.imgcontainer {
+    text-align: center;
+}
+.logo {
+    width: 50%;
+}
+.container {
+    padding: 16px;
+}
+h4, p, a{
+    color: #ffffff;
+    font-family:'Open Sans', sans-serif;
+    color: white;
+    text-align: center; 
+    text-decoration: none;
+}
+.menu-btn{
+    display: inline-block;
+    width: 50px;
+    height: 40px;
+    margin-left: calc(100% - 120px);
+    padding-top: 5px;
+    border: 1px solid white;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.menu-btn span {
+    display: block;
+    width: 40px;
+    height: 5px;
+    margin: 5px 5px;
+    background: #fff;
+    z-index: 99;
+}
+
+.responsive-menu{
+    display: none;
+}
+
+.expand {
+    display: block !important;
+    position: fixed;
+        background-color: rgba(0, 0, 0, 0.8);
+    top: 70px;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 99;
+}
+.createlink{
+    margin: 20px 112px;
+    text-decoration: underline;
+    font-size: 13px;
+    color: white;
+    font-family:'Open Sans', sans-serif;
+}
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+ul li{
+    padding: 10px 20px;
+    height: 30px;
+    margin-bottom: 5px;
+}
+ul li a{
+    color: orange;
+}
+select, input, textarea{
+    display: block;
+    border: 1px solid orange;
+    height: 32px;
+    width: 100%;
+    border-radius: 10px;
+}
+textarea{
+    height: auto;
+}
+.selection{
+    
+}
+
+.field{
+    margin-top: 20px;
+}
+label{
+    font-family:'Open Sans', sans-serif;
+    font-size: 15px;
+    display: block;
+    color: white;
+}
+h1 {
+    font-family:'Open Sans', sans-serif;
+    color: white;
+    font-size: 18px;
+    text-align:center;
+    margin-top: 23px;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+}
+.nav-logo{
+    display: inline-block;
+    width: 60px;
+}
+.nav-img{
+    max-width: 100%;
+}
