@@ -54,7 +54,7 @@ and open the template in the editor.
             <img src="<?php echo $recipe['image'] ?>" alt="recept" class="recept-img">
         </figure>
         <section>
-            <p>Cooking time: <?php echo $recipe['cookingtime'] ?></p>
+            <p  class="cooking-text"><img src="img/clock.png" alt="clock" class="clock"><span>Cooking time:<?php echo $recipe['cookingtime']?></span></p>>
             <h5>Ingredients:</h5>
             <?php $ingredients = explode('_', $recipe['ingredients'])?>
             <ul class="ingredient-list">

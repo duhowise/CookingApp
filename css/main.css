@@ -28,9 +28,9 @@ button{
     font-family: 'Open Sans', sans-serif;
     width: 119px;
     height: 30px;
-	margin-left: 30%;
-	margin-right: 30%;
-	margin-top: 40px;
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-top: 40px;
     background-color: #f9914c;
     color: white;
     border: none;
@@ -54,8 +54,8 @@ h4, p, a, h6{
 }
 .menu-btn{
     display: inline-block;
-    width: 50px;
-    height: 40px;
+    width: 43px;
+    height: 36px;
     margin-left: calc(100% - 120px);
     padding-top: 5px;
     border: 1px solid white;
@@ -64,8 +64,8 @@ h4, p, a, h6{
 }
 .menu-btn span {
     display: block;
-    width: 40px;
-    height: 5px;
+    width: 32px;
+    height: 4px;
     margin: 5px 5px;
     background: #fff;
     z-index: 99;
@@ -78,7 +78,7 @@ h4, p, a, h6{
 .expand {
     display: block !important;
     position: fixed;
-        background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.8);
     top: 70px;
     right: 0;
     left: 0;
@@ -115,10 +115,6 @@ select, input, textarea{
 textarea{
     height: auto;
 }
-.selection{
-    
-}
-
 .field{
     margin-top: 20px;
 }
@@ -148,6 +144,7 @@ h1 {
 .recept-img{
     max-width: 100%; 
     padding-bottom: 10px;
+    padding-top: -10px;
 }
 .parallax {
     min-height: 300px; 
@@ -159,12 +156,12 @@ h1 {
 .image-title{
     display: block;
     position: relative;
-    bottom: 58px;
+    bottom: 93px;
     background-color: orange;
     opacity: 0.8;
     color: black;
     height: 42px;
-    line-height: 40px;
+    height: 77px;
     font-weight: bold;
 }
 .ingredient-list{
@@ -189,4 +186,16 @@ h5{
     text-align: left;
     padding-left: 10px;
     padding-right: 10px;
+}
+.clock{
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    padding-right: 11px;
+}
+.cooking-text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
 }

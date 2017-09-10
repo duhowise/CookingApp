@@ -45,12 +45,14 @@ and open the template in the editor.
             <?php include 'menu.php';?>
         </header>
         <p>Explore our cooking book and find your meal match.</p>
-        
+            
         <div class="parallax">
             <?php foreach($recipes as $recipe): ?>
             <a href="<?php echo "showrecipe.php?id=".$recipe['id'] ?>">
                 <img src="<?php echo $recipe['image'] ?>" alt="recept" class="recept-img">
-                <span class="image-title"><?php echo $recipe['name'] ?></span>
+                <span class="image-title"><?php echo $recipe['name'] ?><br>
+                    <span class="cooking-text"><img src="img/clock.png" alt="clock" class="clock">Cooking time:<?php echo $recipe['cookingtime']?></span>
+                </span>                
             </a>
             <?php endforeach; ?>
         </div>
