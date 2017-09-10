@@ -14,6 +14,9 @@ menuBtn.addEventListener("click", function(){
     if(innerDiv.className == "responsive-menu expand")
     {
         innerDiv.className = "responsive-menu";
+        window.setTimeout(function(){
+            innerDiv.className = "rensonsive-menu close";
+        }, 1000);
     }
     else
     {

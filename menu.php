@@ -16,7 +16,7 @@
         <span></span>
     </div>
                     
-    <div class="responsive-menu" id="resp-menu">
+    <div class="responsive-menu close" id="resp-menu">
         <ul>
             <li><a href="home.php">Home</a></li>
             <li><a href="addrecipe.php">Add your recipes</a></li>           

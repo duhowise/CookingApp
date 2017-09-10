@@ -72,18 +72,32 @@ h4, p, a, h6{
 }
 
 .responsive-menu{
-    display: none;
-}
-
-.expand {
-    display: block !important;
     position: fixed;
     background-color: rgba(0, 0, 0, 0.8);
     top: 70px;
     right: 0;
     left: 0;
     bottom: 0;
-    z-index: 99;
+    z-index: 99;    
+    animation-name: rotate-back;
+    animation-duration: 1s;  
+}
+
+.expand {
+    display: block !important;    
+    animation-name: rotate-left;
+    animation-duration: 1s;
+}
+.close{
+    display: none;
+}
+@keyframes rotate-left {
+    from {transform: rotateY(90deg);}
+    to {transform: rotateY(0deg);}
+}
+@keyframes rotate-back {
+    from {transform: rotateY(0deg);}
+    to {transform: rotateY(90deg);}
 }
 .createlink{
     margin: 20px 112px;
@@ -156,7 +170,7 @@ h1 {
 .image-title{
     display: block;
     position: relative;
-    bottom: 93px;
+    bottom: 92px;
     background-color: orange;
     opacity: 0.8;
     color: black;
@@ -198,4 +212,7 @@ h5{
     align-items: center;
     justify-content: center;
     padding-top: 10px;
+}
+.message{
+    color: white;
 }
