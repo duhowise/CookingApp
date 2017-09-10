@@ -22,6 +22,7 @@ and open the template in the editor.
                 <option value="Name">Name</option>
                 <option value="Ingredient">Ingredient</option>
                 <option value="Preparation">Preparation</option>
+                <option value="Time">Time</option>
                 <option value="Image">Image</option>
             </select>
             <button id="add" type="button" element="">Add <span id="elementToAdd">{{ selected }}</span></button>
@@ -31,6 +32,7 @@ and open the template in the editor.
             <div class="field" id="ingredientContainer"></div>
             <div class="field" id="preparationContainer"></div>
             <div class="field" id="imageContainer"></div>
+            <div class="field" id="cookingtimeContainer"></div>
             <div class="field" ><button type="submit">Save</button></div>            
         </form>
         <script type="text/javascript" src="js/main.js"></script>

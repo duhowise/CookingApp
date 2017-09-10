@@ -5,12 +5,13 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
+session_start();
 $name = $_POST['recipe_name'];
 $prep = $_POST['preparation'];
 $image = $_FILES['recipe_image'];
 $ingredients = $_POST['ingredients'];
-if(!empty($name) && !empty($prep) && !empty($ingredients) && !empty($image))
+$cookingtime = $_POST['cookingtime']; 
+if(!empty($name) && !empty($prep) && !empty($ingredients) && !empty($image) && !empty($cookingtime))
 {
     $con = mysqli_connect("localhost","root","","appetizing");
     // Check connection
@@ -24,8 +25,8 @@ if(!empty($name) && !empty($prep) && !empty($ingredients) && !empty($image))
     {
         die('Error uploading file - check destination is writeable.');
     }
-    $ingr = implode(",", $ingredients);
-    $query = sprintf("INSERT INTO recipe (name, ingredients, preparation, image) VALUES ('%s', '%s', '%s', '%s')", $name, $prep, $ingr, $imagePath);
+    $ingr = implode("_", $ingredients);
+    $query = sprintf("INSERT INTO recipe (name, ingredients, preparation, image, cookingtime) VALUES ('%s', '%s', '%s', '%s', '%s')", $name, $ingr, $prep, $imagePath, $cookingtime);
     echo $query;
     // Perform queries 
     $isOk = mysqli_query($con, $query);

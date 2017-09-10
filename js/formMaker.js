@@ -16,6 +16,7 @@ var nameSpace = document.getElementById("nameContainer");
 var ingredientSpace = document.getElementById("ingredientContainer");
 var prepSpace = document.getElementById("preparationContainer");
 var imageSpace = document.getElementById("imageContainer");
+var cookingtimeSpace = document.getElementById("cookingtimeContainer");
 addBtn.addEventListener("click", function(){                               
     var element = document.getElementById("elementToAdd").innerHTML;
     if(element == "")
@@ -28,7 +29,7 @@ addBtn.addEventListener("click", function(){
         textarea.name = "preparation";
         textarea.id = element;
         textarea.rows = 5;
-        textarea.placeholder = "Describe your recipe"
+        textarea.placeholder = "Describe your recipe";
         var label = document.createElement("label");
         label.innerHTML = element;
         label.for = textarea.id;
@@ -39,7 +40,7 @@ addBtn.addEventListener("click", function(){
     if(element == "Name" && document.getElementsByName("recipe_name").length == 0)
     {
         var input = document.createElement("input");
-        input.type = "text"
+        input.type = "text";
         input.name = "recipe_name";
         input.id = element;
         input.placeholder = "Example: Lasagne";
@@ -70,6 +71,17 @@ addBtn.addEventListener("click", function(){
         input.type = "file";
         input.name = "recipe_image";
         var label = document.createElement("label");
+        label.innerHTML = element;
+        imageSpace.append(label);
+        imageSpace.append(input);
+    }
+    if(element == "Time" && document.getElementsByName("cookingtime").length == 0)
+    {
+        var input = document.createElement("input");
+        input.type = "text";
+        input.name = "cookingtime";
+        var label = document.createElement("label");
+        input.placeholder = "Exemple: 10 min";
         label.innerHTML = element;
         imageSpace.append(label);
         imageSpace.append(input);

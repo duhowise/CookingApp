@@ -10,6 +10,7 @@ and open the template in the editor.
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300');
 body{
     background-color: rgba(0, 0, 0, 0.91);
+    font-family:'Open Sans', sans-serif;
 }
 
 input[type=text], input[type=password] {
@@ -45,8 +46,7 @@ button{
 .container {
     padding: 16px;
 }
-h4, p, a{
-    color: #ffffff;
+h4, p, a, h6{
     font-family:'Open Sans', sans-serif;
     color: white;
     text-align: center; 
@@ -166,4 +166,27 @@ h1 {
     height: 42px;
     line-height: 40px;
     font-weight: bold;
+}
+.ingredient-list{
+    font-family:'Open Sans', sans-serif;
+    color: white;
+    font-size: 15px;
+    list-style: circle;
+    padding-left: 20px;
+}
+.ingredient-list li{
+    padding: 0;
+    height: auto;
+}
+h5{
+    text-align: left;
+    color: white;
+    font-family:'Open Sans', sans-serif;
+    font-size: 16px;
+    padding-left: 20px;
+}
+.preparation{
+    text-align: left;
+    padding-left: 10px;
+    padding-right: 10px;
 }
