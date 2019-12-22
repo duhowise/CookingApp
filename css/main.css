@@ -1,218 +1,24 @@
-/*
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
-*/
-/* 
-    Created on : 31-Aug-2017, 10:43:52
-    Author     : Radina
-*/
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300');
-body{
-    background-color: rgba(0, 0, 0, 0.91);
-    font-family:'Open Sans', sans-serif;
+.cards {
+  display: flex;
+  flex-direction: row;
+}
+.main{
+  display: flex;
+  align-items: center;
 }
 
-input[type=text], input[type=password] {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #f9914c;
-    box-sizing: border-box;
-    border-radius:10px;
-    background-color: white;
+/* html, body{
+
+} */
+
+.signInButton {
+  float: right;
 }
 
-button{
-    font-family: 'Open Sans', sans-serif;
-    width: 119px;
-    height: 30px;
-    margin-left: 30%;
-    margin-right: 30%;
-    margin-top: 40px;
-    background-color: #f9914c;
-    color: white;
-    border: none;
-    cursor: pointer;
-    border-radius:10px;
-}
-.imgcontainer {
-    text-align: center;
-}
-.logo {
-    width: 50%;
-}
-.container {
-    padding: 16px;
-}
-h4, p, a, h6{
-    font-family:'Open Sans', sans-serif;
-    color: white;
-    text-align: center; 
-    text-decoration: none;
-}
-.menu-btn{
-    display: inline-block;
-    width: 43px;
-    height: 36px;
-    margin-left: calc(100% - 120px);
-    padding-top: 5px;
-    border: 1px solid white;
-    border-radius: 10px;
-    margin-bottom: 10px;
-}
-.menu-btn span {
-    display: block;
-    width: 32px;
-    height: 4px;
-    margin: 5px 5px;
-    background: #fff;
-    z-index: 99;
-}
-
-.responsive-menu{
-    position: fixed;
-    background-color: rgba(0, 0, 0, 0.8);
-    top: 70px;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    z-index: 99;    
-    animation-name: rotate-back;
-    animation-duration: 1s;  
-}
-
-.expand {
-    display: block !important;    
-    animation-name: rotate-left;
-    animation-duration: 1s;
-}
-.close{
-    display: none;
-}
-@keyframes rotate-left {
-    from {transform: rotateY(90deg);}
-    to {transform: rotateY(0deg);}
-}
-@keyframes rotate-back {
-    from {transform: rotateY(0deg);}
-    to {transform: rotateY(90deg);}
-}
-.createlink{
-    margin: 20px 112px;
-    text-decoration: underline;
-    font-size: 13px;
-    color: white;
-    font-family:'Open Sans', sans-serif;
-}
-ul{
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-ul li{
-    padding: 10px 20px;
-    height: 30px;
-    margin-bottom: 5px;
-}
-ul li a{
-    color: orange;
-}
-select, input, textarea{
-    display: block;
-    border: 1px solid orange;
-    height: 32px;
-    width: 100%;
-    border-radius: 10px;
-}
-textarea{
-    height: auto;
-}
-.field{
-    margin-top: 20px;
-}
-label{
-    font-family:'Open Sans', sans-serif;
-    font-size: 15px;
-    display: block;
-    color: white;
-}
-h1 {
-    font-family:'Open Sans', sans-serif;
-    color: white;
-    font-size: 18px;
-    text-align:center;
-    margin-top: 23px;
-    margin-right: 10px;
-    margin-left: 10px;
-    margin-bottom: 20px;
-}
-.nav-logo{
-    display: inline-block;
-    width: 60px;
-}
-.nav-img{
-    max-width: 100%;
-}
-.recept-img{
-    max-width: 100%; 
-    padding-bottom: 10px;
-    padding-top: -10px;
-}
-.parallax {
-    min-height: 300px; 
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.image-title{
-    display: block;
-    position: relative;
-    bottom: 92px;
-    background-color: orange;
-    opacity: 0.8;
-    color: black;
-    height: 42px;
-    height: 77px;
-    font-weight: bold;
-}
-.ingredient-list{
-    font-family:'Open Sans', sans-serif;
-    color: white;
-    font-size: 15px;
-    list-style: circle;
-    padding-left: 20px;
-}
-.ingredient-list li{
-    padding: 0;
-    height: auto;
-}
-h5{
-    text-align: left;
-    color: white;
-    font-family:'Open Sans', sans-serif;
-    font-size: 16px;
-    padding-left: 20px;
-}
-.preparation{
-    text-align: left;
-    padding-left: 10px;
-    padding-right: 10px;
-}
-.clock{
-    display: inline-block;
-    width: 25px;
-    height: 25px;
-    padding-right: 11px;
-}
-.cooking-text{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-top: 10px;
-}
-.message{
-    color: white;
+#indexImage{
+  max-width: 30%;
+  max-height:  30%;
+   display: flex;
+  align-items: center;
+  justify-content: center;
 }
